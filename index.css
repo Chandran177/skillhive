@@ -99,7 +99,7 @@
     width: 130px;
     transform: var(--position-translate);
     right: -70px;
-    top:60%;
+    top: 60%;
     z-index: -1;
 }
 
@@ -400,9 +400,9 @@ section {
 }
 
 .s2-aside div>div:nth-child(1) {
-    height:clamp(3.813rem, 2.103rem + 3.039vw, 5.75rem);
+    height: clamp(3.813rem, 2.103rem + 3.039vw, 5.75rem);
     width: clamp(3.813rem, 2.103rem + 3.039vw, 5.75rem);
-    margin-bottom:clamp(0.625rem, -1.029rem + 2.941vw, 2.5rem);
+    margin-bottom: clamp(0.625rem, -1.029rem + 2.941vw, 2.5rem);
     border-radius: var(--circle-border);
     background: linear-gradient(180deg, var(--primary-yellow) 0%, var(--faded-yellow) 100%);
     box-shadow: 0px 0px 20.7px 0px rgba(0, 0, 0, 0.13);
@@ -426,37 +426,184 @@ section {
 
 /* section 5 css */
 
-.section5{
+.section5 {
     padding: 8%;
-  position: relative;
-  margin: 30px 0;
-  text-align: center;
+    position: relative;
+    margin: 30px 0;
+    text-align: center;
 }
-.section5::before{
+
+.section5::before {
     content: ' ';
     position: absolute;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     background-image: url('./imageAndSvg/section5img/a5.png');
     z-index: -1;
     opacity: 0.2;
 }
-.section5 h1{
+
+.section5 h1 {
     font-size: var(--font-size-32);
     font-weight: var(--md-font-w);
     color: var(--primary-blue);
     margin-bottom: 30px;
 }
-.s5-layout aside{
+
+.s5-layout aside {
     display: grid;
-    grid-template-columns: repeat(6 ,auto);
+    grid-template-columns: repeat(6, auto);
     place-items: center;
-    gap:40px
+    gap: 40px
 }
-.s5-layout aside img{
+
+.s5-layout aside img {
     width: 80%;
+}
+
+
+
+/* section7 css */
+
+.section7 {
+    padding: 8%;
+    margin: 30px 0;
+    background-image: linear-gradient(90deg, var(--primary-blue) 0%, var(--faded-blue) 100%);
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 30px
+}
+
+.s7-aside1 {
+    color: var(--common-white);
+    align-self: center;
+}
+
+.s7-aside1 h1 {
+    font-size: var(--font-size-40);
+    font-weight: var(--lg-font-w);
+}
+
+.s7-aside1 p:nth-child(2) {
+    font-size: var(--font-size-24);
+    font-size: var(--sm-font-w);
+    max-width: 570px;
+    margin: 25px 0;
+}
+
+.s7-aside1 h2 {
+    font-size: var(--font-size-24);
+    font-size: var(--md-font-w);
+    margin: 10px 0;
+}
+
+.s7-aside1 p:nth-child(5) {
+    font-size: var(--font-size-20);
+    font-size: var(--sm-font-w);
+    max-width: 480px;
+    margin: 25px 0 40px 0;
+}
+
+.s7-aside1 ul {
+    padding-left: 35px;
+    font-size: var(--font-size-20);
+    font-weight: var(--sm-font-w);
+    display: grid;
+    gap: 8px;
+    margin-bottom: 30px;
+}
+
+.s7-aside1 ul li {
+    position: relative;
+}
+
+.s7-aside1 ul li::before {
+    position: absolute;
+    content: ' ';
+    background-image: url('./imageAndSvg/section7img/hugeicons_tick-double-02.svg');
+    width: 30px;
+    height: 30px;
+    left: -32px;
+    top: -3px;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.s7-aside1 span {
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 120px;
+}
+
+.s7-aside1 span img {
+    width: 60px;
+    height: 60px;
+    border-radius: var(--circle-border);
+    border: 3px solid var(--common-white);
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    position: absolute;
+}
+
+.s7-aside1 span img:nth-child(3) {
+    left: -120px;
+}
+
+.s7-aside1 span img:nth-child(2) {
+    left: -95px;
+}
+
+.s7-aside1 span img:nth-child(1) {
+    left: -70px;
+}
+
+.s7-aside2 {
+    width: clamp(19.375rem, 10rem + 16.667vw, 30rem);
+    border-radius: 31px;
+    background: var(--common-white);
+    box-shadow: 0px 0px 45px 5px rgba(13, 13, 13, 0.12);
+    padding: 6% 8%;
+}
+
+.s7-aside2,
+.generalform {
+    display: grid;
+    gap: 15px
+}
+
+.s7-aside2 h1,
+.generalform button {
+    justify-self: center;
+}
+
+.s7-aside2 button {
+    font-size: var(--font-size-24);
+    font-weight: var(--md-font-w);
+    box-shadow: 0px 0px 45px 5px rgba(13, 13, 13, 0.12) !important;
+}
+
+.s7-aside2 h1 {
+    color: var(--btn-black-c);
+    font-size: var(--font-size-32);
+    font-weight: var(--md-font-w);
+}
+
+.generalform label {
+    font-size: var(--font-size-20);
+    font-weight: var(--md-font-w);
+}
+
+.generalform input,
+.generalform select {
+    border-radius: 9px;
+    background: var(--common-white);
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    display: inline-block;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.25);
 }
 
 
@@ -479,20 +626,49 @@ section {
         width: 55%;
 
     }
-    .s2-aside{
+
+    .s2-aside {
         display: grid;
         grid-template-columns: auto auto;
     }
-    .s2-aside >div{
+
+    .s2-aside>div {
         padding: 7%;
     }
 
-    .s5-layout aside{
-        grid-template-columns: repeat(3,auto);
+
+
+
+
+    .s5-layout aside {
+        grid-template-columns: repeat(3, auto);
     }
-    .s5-layout aside img{
+
+    .s5-layout aside img {
         width: 60%;
     }
+
+
+
+.section7{
+    grid-template-columns: auto;
+}
+.s7-aside1{
+    margin: auto;
+    margin-bottom: 40px;
+}
+.s7-aside2{
+    width: 100%;
+}
+.s7-aside2 form{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.s7-aside2 form button{
+   width: 100%;
+   align-self: flex-end;
+}
+
 
 }
 
@@ -501,19 +677,35 @@ section {
         width: clamp(6.25rem, 6.25rem + 8.333vw, 9.375rem);
         height: clamp(9.375rem, 9.375rem + 11.667vw, 13.75rem);
     }
-    .s5-layout aside{
-        grid-template-columns: repeat(2,auto);
+
+
+
+
+    .s5-layout aside {
+        grid-template-columns: repeat(2, auto);
+    }
+
+    .s7-aside1 span{
+        display: none;
+    }
+    .s7-aside2 form{
+        grid-template-columns: auto;
     }
 }
 
 @media (max-width:400px) {
-    .sideinfo, .icon-s2-group1 {
+
+    .sideinfo,
+    .icon-s2-group1 {
         display: none;
     }
-    .s2-aside,.s5-layout aside {
-        grid-template-columns:1fr;
+
+    .s2-aside,
+    .s5-layout aside {
+        grid-template-columns: 1fr;
     }
-    .s5-layout aside img{
+
+    .s5-layout aside img {
         width: 30%;
     }
 }
