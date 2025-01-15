@@ -607,6 +607,84 @@ section {
 }
 
 
+/* section 9  || footer css */
+footer{
+    background-color: var(--primary-blue);
+    color: var(--common-white);
+}
+.section9{
+    padding:3% 8%;
+}
+footer>p{
+    background-color: var(--dark-blue-bg);
+    text-align: center;
+  font-size: var(--font-size-16);
+  font-weight: var(--sm-font-w);
+  padding: 8px;
+}
+.f-aside1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.27);
+    padding-bottom: 30px;
+}
+.f-logo{
+    color: var(--common-white);
+    font-size: var(--font-size-36);
+    font-weight: var(--lg-font-w);
+    gap:20px
+}
+.f-logo img{
+    height:clamp(2.688rem, 1.419rem + 2.255vw, 4.125rem) ;
+    width: clamp(2.5rem, 1.397rem + 1.961vw, 3.75rem);
+}
+.f-aside1 div p:nth-child(2){
+font-size: var(--font-size-16);
+font-weight: var(--md-font-w);
+padding: 5px;
+}
+.f-in{
+    outline: 1px solid var(--primary-yellow)!important;
+}
+.f-mail-p{
+    margin: 8px 10px 16px 0;
+}
+.f-social{
+    display: flex;
+    gap: 15px;
+}
+.f-social img{
+    padding:8px ;
+    width:clamp(2.25rem, 1.919rem + 0.588vw, 2.625rem);
+    height:clamp(2.25rem, 1.919rem + 0.588vw, 2.625rem) ;
+    background-color: var(--dark-blue-bg);
+    border-radius: 8px;
+}
+
+.f-aside2{
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.f-aside2 dl:nth-child(2){
+    justify-self:center;
+}
+.f-aside2 dl{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+.f-aside2 dl dt{
+    font-size: var(--font-size-24);
+    font-weight: var(--md-font-w);
+}
+.f-aside2 dl dd{
+    font-size: var(--font-size-16);
+    font-weight: var(--sm-font-w);
+}
+
+
+
 /* responsive css */
 
 @media (max-width: 950px) {
@@ -670,6 +748,18 @@ section {
 }
 
 
+.f-aside2{
+    grid-template-columns: repeat(3,1fr);
+    gap:30px
+}
+.f-aside2 dl:nth-child(1){
+    grid-column: 1 / 4;
+}
+.f-aside2 dl:nth-child(2){
+    justify-self:start;
+}
+
+
 }
 
 @media (max-width:600px) {
@@ -691,6 +781,11 @@ section {
     .s7-aside2 form{
         grid-template-columns: auto;
     }
+
+    .f-aside1{
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
 }
 
 @media (max-width:400px) {
@@ -707,5 +802,17 @@ section {
 
     .s5-layout aside img {
         width: 30%;
+    }
+    .f-aside2{
+        grid-template-columns: 1fr;
+    }
+    .f-aside2 dl:nth-child(1){
+        grid-column:initial;
+    }
+    .f-aside2 dl:nth-child(2){
+        justify-self: center;
+    }
+    .f-aside2 dl{
+       text-align: center;
     }
 }
