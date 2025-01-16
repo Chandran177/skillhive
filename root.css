@@ -51,3 +51,8 @@
     background: var(--primary-yellow);
     color: var(--btn-black-c);
 }
+.bg-prime-transparent {
+    background: transparent;
+    color: var(--btn-black-c);
+    border: 1px solid var(--primary-blue);
+}
