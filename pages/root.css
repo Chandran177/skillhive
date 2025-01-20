@@ -1,0 +1,58 @@
+:root {
+    --primary-blue: #305CDE;
+    --dark-blue-bg: #1240C9;
+    --faded-blue: #5E87FF;
+    --primary-black: #0D0D0D;
+    --btn-black-c: #000;
+    --btn-white-c: #FAFCFB;
+    --common-white: #FFF;
+    --primary-yellow: #FFD700;
+    --faded-yellow: #FFEE96;
+    --placeholder-grey: #444;
+    --basic-box-sha: rgba(0, 0, 0, 0.25);
+    --md-font-w: 500;
+    --lg-font-w: 600;
+    --sm-font-w: 400;
+    --elipse-border: 9999px;
+    --circle-border: 50%;
+    --button-pad: clamp(0.5rem, 0.574vw + 0.249rem, 0.938rem) clamp(1.063rem, 1.23vw + 0.525rem, 2rem);
+    --nav-h: 79px;
+    --gap-nav: clamp(1.5rem, .8322vw + 1.2514rem, 2.25rem);
+    --font-size-46: clamp(1.5rem, 1.803vw + 0.711rem, 2.875rem);
+    --font-size-20: clamp(0.75rem, 0.656vw + 0.463rem, 1.25rem);
+    --font-size-24: clamp(0.875rem, 0.82vw + 0.516rem, 1.5rem);
+    --font-size-16: clamp(0.75rem, 0.328vw + 0.607rem, 1rem);
+    --font-size-14: clamp(0.688rem, 0.246vw + 0.58rem, 0.875rem);
+    --font-size-36:clamp(1.5rem, 1.07rem + 0.984vw, 2.25rem);
+    --font-size-32:clamp(1rem, 0.118rem + 1.569vw, 2rem);
+    --font-size-40:clamp(1.75rem, 1.088rem + 1.176vw, 2.5rem);
+    --position-translate:translate(-50%, -50%);
+    --position-trans-y:translateY(-50%);
+    --position-trans-x:translateX(-50%);
+}
+
+.btn {
+    padding: var(--button-pad);
+    box-shadow: 0px 6px 50.3px 0px var(--basic-box-sha);
+    border-radius: var(--elipse-border);
+    font-size: var(--font-size-16);
+    font-weight: var(--md-font-w);
+    font-style: normal;
+    line-height: normal;
+    display: inline-block;
+}
+
+.bg-prime-b {
+    background: var(--primary-blue);
+    color: var(--btn-white-c);
+}
+
+.bg-prime-y {
+    background: var(--primary-yellow);
+    color: var(--btn-black-c);
+}
+.bg-prime-transparent {
+    background: transparent;
+    color: var(--btn-black-c);
+    border: 1px solid var(--primary-blue);
+}
