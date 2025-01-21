@@ -1154,7 +1154,8 @@ footer>p {
         margin: 0;
         text-align: center;
     }
-    .btn-group{
+
+    .btn-group {
         justify-content: space-evenly;
     }
 
@@ -1167,12 +1168,18 @@ footer>p {
     }
 
     .s2-aside {
-        display: grid;
-        grid-template-columns: auto auto;
+        flex-direction: column;
+
     }
 
     .s2-aside>div {
-        padding: 7%;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .s2-aside div img {
+        margin: 0;
     }
 
 
@@ -1300,7 +1307,6 @@ footer>p {
         transform: scale(0.7);
     }
 
-    .s2-aside,
     .s5-layout aside {
         grid-template-columns: 1fr;
     }
