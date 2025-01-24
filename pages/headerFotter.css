@@ -28,7 +28,7 @@
     position: sticky;
     top: 0;
     z-index: 999;
-    padding: 12px 3%;
+    padding: 12px clamp(2.5rem, 0.875rem + 8.125vw, 10.625rem);
     display: flex;
     justify-content: space-between;
     align-items: center;
