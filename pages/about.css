@@ -203,6 +203,7 @@ section {
 
 .s3>div .s3-a2 {
     width: 40%;
+    position: relative;
 }
 
 .s3-a1>div {
@@ -235,4 +236,13 @@ section {
 .s3-a2>div img{
     height: 85%;
     width: 95%;
+}
+.s3-a2 span{
+    position: absolute;
+    height: 25%;
+    width: 90%;
+    display: inline-block;
+    background-color: var(--primary-blue);
+    left:0;
+    top:0;
 }
