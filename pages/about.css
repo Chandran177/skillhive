@@ -110,6 +110,7 @@ section {
     color: var(--primary-blue);
     font-size: clamp(1rem, 0.75rem + 1.25vw, 2.25rem);
     /* 36px clamp*/
+    margin-bottom: 2%;
     font-weight: var(--lg-font-w);
     text-align: center;
 }
@@ -117,6 +118,7 @@ section {
 .s2>p {
     font-size: clamp(0.25rem, 0.087rem + 0.813vw, 1.063rem);
     /* 20px clamp*/
+    margin-bottom: 2%;
 }
 
 .s2__container1 {
@@ -137,6 +139,7 @@ section {
     position: relative;
     margin-bottom: 2rem;
     font-weight: 500;
+    /* margin-bottom: 10%; */
 }
 
 .s2-a1>div h1::before,
@@ -150,6 +153,7 @@ section {
     width: clamp(3.75rem, 3.05rem + 3.5vw, 7.25rem);
     border-radius: 10px;
     background-color: var(--primary-yellow);
+    /* margin-bottom: 2%; */
 }
 
 .s2-a1>div h2,
@@ -177,6 +181,7 @@ section {
 }
 
 .s2-a2>div {
+    transform: scale(0.8);
     justify-self: end;
     position: relative;
     width: clamp(7.5rem, 2.375rem + 25.625vw, 33.125rem);
