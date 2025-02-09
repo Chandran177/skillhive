@@ -3,7 +3,7 @@ let footer = document.getElementById('footer')
 
 header.innerHTML= `<div class="nav">
     <div class="logo">
-        <img src="../../imageAndSvg/navImg/Group 7 1.png" alt="logo">
+        <img src="../../imageAndSvg/navimg/logo.png" alt="logo">
 
         Skill Hive
     </div>
