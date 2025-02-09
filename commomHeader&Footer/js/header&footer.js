@@ -1,6 +1,6 @@
 
 function loadHeader() {
-    fetch('/commomHeader&Footer/html/header.html')
+    fetch('../html/header.html')
       .then(response => response.text())
       .then(data => {
         document.querySelector('body').insertAdjacentHTML('afterbegin', data);
