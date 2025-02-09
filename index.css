@@ -1123,7 +1123,6 @@ footer>p {
 
 @media (max-width: 950px) {
 
-    .navlist,
     .img-group {
         display: none;
     }

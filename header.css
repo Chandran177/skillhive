@@ -1,4 +1,4 @@
-@import '../../root.css';
+@import '/root.css';
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
@@ -20,6 +20,7 @@
     height: 20px;
     width: 20px;
 }
+
 .icon-advanced {
     background-image: url('./imageAndSvg/navSvg/Vector.svg');
 }
@@ -38,9 +39,11 @@
     font-weight: var(--md-font-w);
     line-height: normal;
 }
-a{
+
+a {
     color: var(--primary-blue);
 }
+
 .logo {
     display: flex;
     align-items: center;
@@ -64,3 +67,52 @@ a{
     font-size: var(--font-size-24);
 }
 
+.fa-bars,
+.contentList {
+    display: none !important;
+}
+
+
+@media (max-width: 780px) {
+    .contactButton {
+        display: none;
+    }
+
+    .fa-bars,
+    .contentList {
+        display: block !important;
+    }
+
+    .fa-bars {
+        font-size: larger;
+        color: var(--primary-blue);
+    }
+
+    .navlist {
+
+        overflow: hidden;
+        height: 0;
+        position: absolute;
+        top: 100%;
+        flex-direction: column;
+        background-color: white;
+        width: 100%;
+        left: 0;
+        gap: 0 !important;
+    }
+
+    .hidden {
+        height: max-content !important;
+
+    }
+
+    .hidden li {
+        padding: 15px clamp(2.5rem, 0.875rem + 8.125vw, 10.625rem);
+        border-bottom: 1px solid rgba(179, 177, 177, 0.644);
+
+    }
+
+
+
+
+}

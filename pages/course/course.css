@@ -1,4 +1,4 @@
-@import '../../root.css';
+@import '/root.css';
 
 
 section {
@@ -87,7 +87,7 @@ section {
     display: grid;
     grid-template-columns: repeat(3,auto);
     justify-content:space-between;
-    row-gap:var(--gap-nav)
+    gap:var(--gap-nav)
 }
 
 .s3-aside>div {
@@ -198,4 +198,19 @@ margin-top: .3rem;
 .img-group img{
     height: clamp(0.5rem, 0.338rem + 0.813vw, 1.313rem);
     width: clamp(0.5rem, 0.338rem + 0.813vw, 1.313rem);
+}
+
+@media (max-width: 750px) {
+    .s3-aside{
+        grid-template-columns: auto auto;
+        justify-content: center;
+        gap:var(--gap-nav)
+    }
+    .s3-aside > div:nth-child(9){
+        display: none;
+    }
+    .s3-aside > div{
+        width: clamp(7.5rem, 0rem + 40vw, 18.75rem);
+    }
+
 }
