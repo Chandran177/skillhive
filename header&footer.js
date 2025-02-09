@@ -5,6 +5,6 @@ document.addEventListener("DOMContentLoaded", function(){
         }).catch(err=>console.error("error in data", err))
     }
 
-    loadHTML("header","/header.html")
-    loadHTML("footer","/footer.html")
+    loadHTML("header","header.html")
+    loadHTML("footer","footer.html")
 })
