@@ -1,7 +1,6 @@
 
 document.addEventListener("DOMContentLoaded", function () {
     function loadHTML(selector, url) {
-        console.log('url',url)
         fetch(url).then(res => res.text()).then(data => {
             document.querySelector(selector).innerHTML = data
         }).catch(err => console.error("error in data", err))
