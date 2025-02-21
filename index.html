@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./footer.css">
     <link rel="stylesheet" href="./root.css">
     <link rel="stylesheet" href="./index.css">
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.17.2/dist/sweetalert2.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
@@ -419,33 +420,33 @@
             </aside>
             <aside class="s7-aside2">
                 <h1>Quick Enquiry</h1>
-                <form class="generalform">
+                <form class="generalform" id="reserveForm" >
                     <div>
                         <label>Name*</label><br />
-                        <input placeholder="Enter your name" />
+                        <input placeholder="Enter your name" name="name"/>
                     </div>
                     <div>
                         <label>Email*</label><br />
-                        <input placeholder="Enter your Email ID" />
+                        <input placeholder="Enter your Email ID" name="email" />
                     </div>
                     <div>
                         <label>Phone Number*</label><br />
-                        <input placeholder="Enter your Phone Number" />
+                        <input placeholder="Enter your Phone Number" name="phone"/>
                     </div>
                     <div>
                         <label>Education Level*</label><br />
-                        <select class="select_category">
-                            <option value="">Select your option</option>
+                        <select class="select_category" name="education">
+                            <option disabled selected value>Select your option</option>
                         </select>
                     </div>
                     <div>
                         <label>Career status*</label><br />
-                        <select>
-                            <option value="" disabled selected>Select your option</option>
+                        <select name="career">
+                            <option disabled selected value>Select your option</option>
 
                         </select>
                     </div>
-                    <button class="btn bg-prime-y">Submit</button>
+                    <button class="btn bg-prime-y" type="submit">Submit</button>
                 </form>
             </aside>
         </section>
@@ -538,6 +539,8 @@
       
     </main>
 
+    <script src="/formSubmit.js"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.17.2/dist/sweetalert2.all.min.js"></script>
 </body>
 
 </html>
