@@ -12,16 +12,15 @@ function handleFormSubmit(event) {
         education: formData.get("education"),
         career : formData.get("career")
     };
+    console.log(data);
  
     function dataClean() {
         form.reset(); 
     }
 
-    console.log(data);
-
     const submitButton = form.querySelector("button[type='submit']");
     submitButton.disabled = true;
-
+    console.log(JSON.stringify(data))
     fetch('https://script.google.com/macros/s/AKfycbzBM5mN2SokLay_wpv4_QsnDmp4MW_jZ5eCi7TFsdV9Vgyulz_C5H4hhtHUPWAunpUS/exec', {
         method: 'POST',
         body: JSON.stringify(data),
@@ -33,12 +32,6 @@ function handleFormSubmit(event) {
     .then(response => {
         dataClean();  
         console.log(response);
-
-        // const modal = document.getElementById("modal");
-        // if (modal) {
-        //     modal.style.display = "none"; 
-        // }
-
         Swal.fire({
             icon: "success",
             title: "Form submitted successfully..",
