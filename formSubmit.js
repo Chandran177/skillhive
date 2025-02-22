@@ -22,7 +22,7 @@ function handleFormSubmit(event) {
     const submitButton = form.querySelector("button[type='submit']");
     submitButton.disabled = true;
 
-    fetch('https://script.google.com/macros/s/AKfycbzyAFsOAMckLCBZKK_KuBxFrHdp6_BuCZWT5_CjkGfBVtZ3IAcyEj_m9ledWQqkQnSqAA/exec', {
+    fetch('https://script.google.com/macros/s/AKfycbzBM5mN2SokLay_wpv4_QsnDmp4MW_jZ5eCi7TFsdV9Vgyulz_C5H4hhtHUPWAunpUS/exec', {
         method: 'POST',
         body: JSON.stringify(data),
         headers: {
