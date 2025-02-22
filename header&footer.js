@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 document.querySelector(selector).innerHTML = data
                 let imageElemet = document.getElementById('logo');
                 let footerLogo=document.getElementById('footerLogo')
-                if (path.includes('about.html') || path.includes('course')) {
+                if (!path.includes('index.html')) {
                     imageElemet.src = "../../imageAndSvg/footerimg/logo.png"
                     footerLogo.src="../../imageAndSvg/footerimg/logo-white.png"
                 }
