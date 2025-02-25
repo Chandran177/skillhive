@@ -140,30 +140,30 @@ section {
     background-color: red;
     border-radius: 29px;
 }
-.info-group{
+.info-group1{
 margin-top: .3rem;
 }
-.info-group >div{
+.info-group1 >div{
     display: flex;
 }
 
-.info-group dl {
+.info-group1 dl {
     text-align: left;
     justify-self: flex-start;
     line-height: 90%;
 }
 
-.info-group dd {
+.info-group1 dd {
     font-size:clamp(0.25rem, 0.1rem + 0.75vw, 1rem);
     font-weight: 400;
 }
 
-.info-group dd::before {
+.info-group1 dd::before {
     content: '. ';
     font-size: var(--font-size-32);
 }
 
-.info-group dt {
+.info-group1 dt {
     font-size: clamp(0.438rem, 0.225rem + 1.063vw, 1.5rem);
     font-weight: 500;
     padding:.5rem 0;

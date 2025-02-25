@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code Pilot</title>
     <script defer src="./header&footer.js"></script>
+    <script defer src="./js/action.js"></script>
     <link rel="stylesheet" href="./header.css">
     <link rel="stylesheet" href="./footer.css">
     <link rel="stylesheet" href="./root.css">
@@ -36,8 +37,8 @@
                     <div class="search-group">
                         <label>What do you want to learn?</label>
                         <div>
-                            <input type="search" placeholder="Search courses..." />
-                            <i class="icon icon-search"></i>
+                            <input id="searchInput" type="search" placeholder="Search courses..." />
+                            <i onclick="search()" class="icon icon-search"></i>
                         </div>
                     </div>
                     <a href="/pages/contact/contact.html">
@@ -55,27 +56,27 @@
                     <div>
                         <img src="./imageAndSvg/section1img/a039a03a0549547a24d53ab46a25cac2.png" alt="">
                         <span class="sideinfo">
-                            <p>10K+</p> <span>Satisfied Learners</span>
+                            <p>1K+</p> <span>Satisfied Learners</span>
                         </span>
                     </div>
                     <div>
                         <img src="./imageAndSvg/section1img/img2.png" alt="">
                         <span class="sideinfo">
-                            <p>1K+</p> <span>Realtime Projects</span>
+                            <p>100+</p> <span>Realtime Projects</span>
                         </span>
                         <i class="icon icon-round1 round"> <i class="icon icon-round2 round"></i></i>
                     </div>
                     <div>
                         <img src="./imageAndSvg/section1img/img3.png" alt="">
                         <span class="sideinfo">
-                            <p>35+</p> <span>Courses</span>
+                            <p>4+</p> <span>Courses</span>
                         </span>
                         <i class="icon icon-round4 round"> <i class="icon icon-round5 round"></i></i>
                     </div>
                     <div>
                         <img src="./imageAndSvg/section1img/img4.png" alt="">
                         <span class="sideinfo">
-                            <p>30+</p> <span>Certified Trainers</span>
+                            <p>10+</p> <span>Certified Trainers</span>
                         </span>
                         <i class="icon icon-round3 round"></i>
                     </div>
@@ -141,7 +142,7 @@
                     <button class="btn bg-prime-transparent">MernStack</button>
 
                 </div>
-                <aside class="s3-aside">
+                <aside class="s3-aside" id="courses">
 
                     <div>
                         <div class="imgsup">
@@ -451,8 +452,8 @@
                     <div>
                         <label>Education Level*</label><br />
                         <select class="select_category" name="education">
-                            <option disabled selected value>Select your option</option>
-                            <option value="Diploma">Diploma</option>
+                            <option value disabled selected>Select your option</option>
+                            <option value="Diplamo">Diploma</option>
                             <option value="UG">UG</option>
                             <option value="PG">PG</option>
                         </select>

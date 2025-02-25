@@ -13,16 +13,17 @@ function handleFormSubmit(event) {
         career: formData.get("career"),
         course: formData.get("course"),
     };
+    console.log(data);
  
     function dataClean() {
         form.reset(); 
     }
 
-    console.log(data);
-
     const submitButton = form.querySelector("button[type='submit']");
     submitButton.disabled = true;
-    fetch('https://script.google.com/macros/s/AKfycbwPF2gGhWC8sWQmTppQijKmawLpQ84o7Kx_0VrrH2og6yb_HHYh7LZ1yBmJHz8gvh73/exec', {
+
+    fetch('https://script.google.com/macros/s/AKfycbzBM5mN2SokLay_wpv4_QsnDmp4MW_jZ5eCi7TFsdV9Vgyulz_C5H4hhtHUPWAunpUS/exec', {
+
         method: 'POST',
         body: JSON.stringify(data),
         headers: {
@@ -30,9 +31,11 @@ function handleFormSubmit(event) {
         },
         mode: 'no-cors'
     })
-    .then(response => response.text())
-    .then(result => {
-        console.log('Success:', result);
+
+    .then(response => {
+        dataClean();  
+        console.log(response);
+
         Swal.fire({
             icon: "success",
             title: "Form submitted successfully..",
